@@ -1,58 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.chen.lvyou.dao.ScenictypeDao" >
-  <resultMap id="BaseResultMap" type="com.chen.lvyou.entity.Scenictype" >
-    <id column="scenic_type_id" property="scenicTypeId" jdbcType="INTEGER" />
-    <result column="type_name" property="typeName" jdbcType="VARCHAR" />
-  </resultMap>
-  <sql id="Base_Column_List" >
+<mapper namespace="com.chen.lvyou.dao.ScenictypeDao">
+    <resultMap id="BaseResultMap" type="com.chen.lvyou.entity.ScenicType">
+        <id column="scenic_type_id" property="scenicTypeId" jdbcType="INTEGER"/>
+        <result column="type_name" property="typeName" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
     scenic_type_id, type_name
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
-    <include refid="Base_Column_List" />
-    from t_scenictype
-    where scenic_type_id = #{scenicTypeId,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from t_scenictype
+        where scenic_type_id = #{scenicTypeId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from t_scenictype
     where scenic_type_id = #{scenicTypeId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.chen.lvyou.entity.Scenictype" >
+    <insert id="insert" parameterType="com.chen.lvyou.entity.ScenicType">
     insert into t_scenictype (scenic_type_id, type_name)
     values (#{scenicTypeId,jdbcType=INTEGER}, #{typeName,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.chen.lvyou.entity.Scenictype" >
-    insert into t_scenictype
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="scenicTypeId != null" >
-        scenic_type_id,
-      </if>
-      <if test="typeName != null" >
-        type_name,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="scenicTypeId != null" >
-        #{scenicTypeId,jdbcType=INTEGER},
-      </if>
-      <if test="typeName != null" >
-        #{typeName,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.chen.lvyou.entity.Scenictype" >
-    update t_scenictype
-    <set >
-      <if test="typeName != null" >
-        type_name = #{typeName,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where scenic_type_id = #{scenicTypeId,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.chen.lvyou.entity.Scenictype" >
+    <insert id="insertSelective" parameterType="com.chen.lvyou.entity.ScenicType">
+        insert into t_scenictype
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="scenicTypeId != null">
+                scenic_type_id,
+            </if>
+            <if test="typeName != null">
+                type_name,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="scenicTypeId != null">
+                #{scenicTypeId,jdbcType=INTEGER},
+            </if>
+            <if test="typeName != null">
+                #{typeName,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.chen.lvyou.entity.ScenicType">
+        update t_scenictype
+        <set>
+            <if test="typeName != null">
+                type_name = #{typeName,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where scenic_type_id = #{scenicTypeId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.chen.lvyou.entity.ScenicType">
     update t_scenictype
     set type_name = #{typeName,jdbcType=VARCHAR}
     where scenic_type_id = #{scenicTypeId,jdbcType=INTEGER}
   </update>
+    <select id="selectAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from t_scenictype
+    </select>
 </mapper>

@@ -1,17 +1,17 @@
 package com.chen.lvyou.dao;
 
-import com.chen.lvyou.entity.Leaveword;
+import com.chen.lvyou.entity.LeaveWord;
 
 public interface LeavewordDao {
     int deleteByPrimaryKey(Integer leaveWordId);
 
-    int insert(Leaveword record);
+    int insert(LeaveWord record);
 
-    int insertSelective(Leaveword record);
+    int insertSelective(LeaveWord record);
 
-    Leaveword selectByPrimaryKey(Integer leaveWordId);
+    LeaveWord selectByPrimaryKey(Integer leaveWordId);
 
-    int updateByPrimaryKeySelective(Leaveword record);
+    int updateByPrimaryKeySelective(LeaveWord record);
 
-    int updateByPrimaryKey(Leaveword record);
+    int updateByPrimaryKey(LeaveWord record);
 }

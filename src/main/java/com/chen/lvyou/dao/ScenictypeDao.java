@@ -1,17 +1,25 @@
 package com.chen.lvyou.dao;
 
-import com.chen.lvyou.entity.Scenictype;
+import com.chen.lvyou.entity.ScenicType;
+
+import java.util.List;
 
 public interface ScenictypeDao {
     int deleteByPrimaryKey(Integer scenicTypeId);
 
-    int insert(Scenictype record);
+    int insert(ScenicType record);
 
-    int insertSelective(Scenictype record);
+    int insertSelective(ScenicType record);
 
-    Scenictype selectByPrimaryKey(Integer scenicTypeId);
+    ScenicType selectByPrimaryKey(Integer scenicTypeId);
 
-    int updateByPrimaryKeySelective(Scenictype record);
+    int updateByPrimaryKeySelective(ScenicType record);
 
-    int updateByPrimaryKey(Scenictype record);
+    int updateByPrimaryKey(ScenicType record);
+
+    /**
+     * 查询所有的景点分类
+     * @return
+     */
+    List<ScenicType> selectAll();
 }

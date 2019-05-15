@@ -20,8 +20,8 @@ import java.util.List;
 public class UserController {
 
     @Resource
-    private              IUserService iuserService;
-    private final static Logger       logger = LoggerFactory.getLogger(UserController.class);
+    private IUserService        iuserService;
+    private final static Logger logger = LoggerFactory.getLogger(UserController.class);
 
     @ResponseBody
     @RequestMapping(value = "/all/{pageNum}/{pageSize}", method = RequestMethod.GET)
@@ -40,7 +40,7 @@ public class UserController {
         return ActionResponse.success(iuserService.addUser(userinfo));
     }
 
-    /*跳转到添加UserInfo视图*/
+    /* 跳转到添加UserInfo视图 */
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String userAdd(Model model, HttpServletRequest request) throws Exception {
         logger.debug("调用user/add");
@@ -48,26 +48,31 @@ public class UserController {
         return "UserInfo/userInfo_add";
     }
 
-    /*前台查询UserInfo信息*/
-    @RequestMapping(value="/frontshow",method=RequestMethod.GET)
-    public String frontshow(Model model,HttpServletRequest request) throws Exception {
-        /*根据主键userId获取UserInfo对象*/
+    /* 前台查询UserInfo信息 */
+    @RequestMapping(value = "/frontshow", method = RequestMethod.GET)
+    public String frontshow(Model model, HttpServletRequest request) throws Exception {
+        /* 根据主键userId获取UserInfo对象 */
         String username = (String) SecurityUtils.getSubject().getPrincipal();
-        logger.debug("获取到前台登录用户"+username);
+        logger.debug("获取到前台登录用户" + username);
         Userinfo user = iuserService.findUserByName(username);
-        //Userinfo userInfo = iuserService.getUserInfo("1");
-        request.setAttribute("userinfo",  user);
+        // Userinfo userInfo = iuserService.getUserInfo("1");
+        request.setAttribute("userinfo", user);
         return "UserInfo/userInfo_frontshow";
     }
 
-    /*前台按照查询条件分页查询用户信息*/
-    @RequestMapping(value = { "/frontlist" }, method = {RequestMethod.GET,RequestMethod.POST})
-    public String frontlist(Integer pageSize,Integer currentPage, Model model, HttpServletRequest request) throws Exception  {
-        if (currentPage==null || currentPage == 0) currentPage = 1;
-        if (pageSize == null || pageSize == 0) pageSize = 10;
-        List<Userinfo> userInfoList = iuserService.findAllUser(1,10);
+    /* 前台按照查询条件分页查询用户信息 */
+    @RequestMapping(value = { "/frontlist" }, method = { RequestMethod.GET, RequestMethod.POST })
+    public String frontlist(Integer pageSize, Integer currentPage, Model model,
+                            HttpServletRequest request) throws Exception {
+        if (currentPage == null || currentPage == 0) {
+            currentPage = 1;
+        }
+        if (pageSize == null || pageSize == 0) {
+            pageSize = 10;
+        }
+        List<Userinfo> userInfoList = iuserService.findAllUser(1, 10);
 
-        request.setAttribute("userInfoList",  userInfoList);
+        request.setAttribute("userInfoList", userInfoList);
         request.setAttribute("totalPage", 1);
         request.setAttribute("recordNumber", userInfoList.size());
         request.setAttribute("currentPage", currentPage);
@@ -77,12 +82,12 @@ public class UserController {
         return "UserInfo/userInfo_frontquery_result";
     }
 
-    /*前台查询UserInfo信息*/
-    @RequestMapping(value="/{userId}/frontshow",method=RequestMethod.GET)
-    public String frontshow(@PathVariable String userId,Model model,HttpServletRequest request) throws Exception {
-        /*根据主键userId获取UserInfo对象*/
+    /* 前台查询UserInfo信息 */
+    @RequestMapping(value = "/{userId}/frontshow", method = RequestMethod.GET)
+    public String frontshow(@PathVariable String userId, Model model, HttpServletRequest request) throws Exception {
+        /* 根据主键userId获取UserInfo对象 */
         Userinfo userinfo = iuserService.getUserInfoById(userId);
-        request.setAttribute("userinfo",  userinfo);
+        request.setAttribute("userinfo", userinfo);
         return "UserInfo/userInfo_frontshow";
     }
 }

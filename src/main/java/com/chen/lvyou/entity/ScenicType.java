@@ -1,6 +1,6 @@
 package com.chen.lvyou.entity;
 
-public class Scenictype {
+public class ScenicType {
     private Integer scenicTypeId;
 
     private String typeName;

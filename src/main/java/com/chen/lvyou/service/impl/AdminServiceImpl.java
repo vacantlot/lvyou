@@ -28,7 +28,7 @@ public class AdminServiceImpl implements IAdminService {
 
     @Resource
     private AdminDao            adminDao;
-    private final static Logger logger = LoggerFactory.getLogger(CustomRealm.class);
+    private final static Logger logger = LoggerFactory.getLogger(AdminServiceImpl.class);
 
     @Override
     public String adminlogin(String username, String password, HttpSession session) {

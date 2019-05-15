@@ -22,7 +22,7 @@ public class UserServiceImpl implements IUserService {
 
     @Resource
     private UserinfoDao         userinfoDao;
-    private final static Logger logger = LoggerFactory.getLogger(CustomRealm.class);
+    private final static Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Override
     public int addUser(Userinfo userinfo) {

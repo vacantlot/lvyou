@@ -21,7 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="<%=basePath %>index">首页</a></li>
                  <li><a href="<%=basePath %>user/frontlist">用户</a></li>
-                <li><a href="<%=basePath %>ScenicType/frontlist">景点分类</a></li>
+                <li><a href="<%=basePath %>scenicType/frontlist">景点分类</a></li>
                 <li><a href="<%=basePath %>City/frontlist">城市</a></li>
                 <li><a href="<%=basePath %>Scenic/frontlist">景点</a></li>
                 <li><a href="<%=basePath %>Comment/frontlist">评论</a></li>

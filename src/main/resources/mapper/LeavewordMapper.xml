@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.chen.lvyou.dao.LeavewordDao" >
-  <resultMap id="BaseResultMap" type="com.chen.lvyou.entity.Leaveword" >
+  <resultMap id="BaseResultMap" type="com.chen.lvyou.entity.LeaveWord" >
     <id column="leave_word_id" property="leaveWordId" jdbcType="INTEGER" />
     <result column="title" property="title" jdbcType="VARCHAR" />
     <result column="leave_content" property="leaveContent" jdbcType="VARCHAR" />
@@ -23,7 +23,7 @@
     delete from t_leaveword
     where leave_word_id = #{leaveWordId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.chen.lvyou.entity.Leaveword" >
+  <insert id="insert" parameterType="com.chen.lvyou.entity.LeaveWord" >
     insert into t_leaveword (leave_word_id, title, leave_content, 
       add_time, user_id, reply_content, 
       reply_time)
@@ -31,7 +31,7 @@
       #{addTime,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{replyContent,jdbcType=VARCHAR}, 
       #{replyTime,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.chen.lvyou.entity.Leaveword" >
+  <insert id="insertSelective" parameterType="com.chen.lvyou.entity.LeaveWord" >
     insert into t_leaveword
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="leaveWordId != null" >
@@ -80,7 +80,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.chen.lvyou.entity.Leaveword" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.chen.lvyou.entity.LeaveWord" >
     update t_leaveword
     <set >
       <if test="title != null" >
@@ -104,7 +104,7 @@
     </set>
     where leave_word_id = #{leaveWordId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.chen.lvyou.entity.Leaveword" >
+  <update id="updateByPrimaryKey" parameterType="com.chen.lvyou.entity.LeaveWord" >
     update t_leaveword
     set title = #{title,jdbcType=VARCHAR},
       leave_content = #{leaveContent,jdbcType=VARCHAR},

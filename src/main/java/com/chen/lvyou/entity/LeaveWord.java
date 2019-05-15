@@ -1,6 +1,6 @@
 package com.chen.lvyou.entity;
 
-public class Leaveword {
+public class LeaveWord {
     private Integer leaveWordId;
 
     private String title;

@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*"  contentType="text/html;charset=UTF-8"%> 
-<%@ page import="com.shuangyulin.po.ScenicType" %>
+<%@ page import="com.chen.lvyou.entity.ScenicType" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -51,12 +51,12 @@
  										%>
  										<tr>
  											<td><%=currentIndex %></td>
- 											<td><%=scenicType.getTypeId() %></td>
+ 											<td><%=scenicType.getScenicTypeId() %></td>
  											<td><%=scenicType.getTypeName() %></td>
  											<td>
- 												<a href="<%=basePath  %>ScenicType/<%=scenicType.getTypeId() %>/frontshow"><i class="fa fa-info"></i>&nbsp;查看</a>&nbsp;
- 												<a href="#" onclick="scenicTypeEdit('<%=scenicType.getTypeId() %>');" style="display:none;"><i class="fa fa-pencil fa-fw"></i>编辑</a>&nbsp;
- 												<a href="#" onclick="scenicTypeDelete('<%=scenicType.getTypeId() %>');" style="display:none;"><i class="fa fa-trash-o fa-fw"></i>删除</a>
+ 												<a href="<%=basePath  %>ScenicType/<%=scenicType.getScenicTypeId() %>/frontshow"><i class="fa fa-info"></i>&nbsp;查看</a>&nbsp;
+ 												<a href="#" onclick="scenicTypeEdit('<%=scenicType.getScenicTypeId() %>');" style="display:none;"><i class="fa fa-pencil fa-fw"></i>编辑</a>&nbsp;
+ 												<a href="#" onclick="scenicTypeDelete('<%=scenicType.getScenicTypeId() %>');" style="display:none;"><i class="fa fa-trash-o fa-fw"></i>删除</a>
  											</td> 
  										</tr>
  										<%}%>
@@ -73,8 +73,12 @@
 						                     <%
 						                    	int startPage = currentPage - 5;
 						                    	int endPage = currentPage + 5;
-						                    	if(startPage < 1) startPage=1;
-						                    	if(endPage > totalPage) endPage = totalPage;
+						                    	if(startPage < 1) {
+						                    		startPage=1;
+												}
+						                    	if(endPage > totalPage) {
+						                    		endPage = totalPage;
+												}
 						                    	for(int i=startPage;i<=endPage;i++) {
 						                    %>
 						                    <li class="<%= currentPage==i?"active":"" %>"><a href="#"  onclick="GoToPage(<%=i %>,<%=totalPage %>);"><%=i %></a></li>

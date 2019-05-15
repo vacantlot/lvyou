@@ -55,4 +55,10 @@
     set cityName = #{cityname,jdbcType=VARCHAR}
     where city_id = #{cityId,jdbcType=VARCHAR}
   </update>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from t_city
+  </select>
 </mapper>
