@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chen.lvyou.dao.LeavewordDao" >
+  <resultMap id="BaseResultMap" type="com.chen.lvyou.entity.Leaveword" >
+    <id column="leave_word_id" property="leaveWordId" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="leave_content" property="leaveContent" jdbcType="VARCHAR" />
+    <result column="add_time" property="addTime" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="reply_content" property="replyContent" jdbcType="VARCHAR" />
+    <result column="reply_time" property="replyTime" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    leave_word_id, title, leave_content, add_time, user_id, reply_content, reply_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_leaveword
+    where leave_word_id = #{leaveWordId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_leaveword
+    where leave_word_id = #{leaveWordId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.chen.lvyou.entity.Leaveword" >
+    insert into t_leaveword (leave_word_id, title, leave_content, 
+      add_time, user_id, reply_content, 
+      reply_time)
+    values (#{leaveWordId,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{leaveContent,jdbcType=VARCHAR}, 
+      #{addTime,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{replyContent,jdbcType=VARCHAR}, 
+      #{replyTime,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.chen.lvyou.entity.Leaveword" >
+    insert into t_leaveword
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="leaveWordId != null" >
+        leave_word_id,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="leaveContent != null" >
+        leave_content,
+      </if>
+      <if test="addTime != null" >
+        add_time,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="replyContent != null" >
+        reply_content,
+      </if>
+      <if test="replyTime != null" >
+        reply_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="leaveWordId != null" >
+        #{leaveWordId,jdbcType=INTEGER},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="leaveContent != null" >
+        #{leaveContent,jdbcType=VARCHAR},
+      </if>
+      <if test="addTime != null" >
+        #{addTime,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="replyContent != null" >
+        #{replyContent,jdbcType=VARCHAR},
+      </if>
+      <if test="replyTime != null" >
+        #{replyTime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.chen.lvyou.entity.Leaveword" >
+    update t_leaveword
+    <set >
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="leaveContent != null" >
+        leave_content = #{leaveContent,jdbcType=VARCHAR},
+      </if>
+      <if test="addTime != null" >
+        add_time = #{addTime,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="replyContent != null" >
+        reply_content = #{replyContent,jdbcType=VARCHAR},
+      </if>
+      <if test="replyTime != null" >
+        reply_time = #{replyTime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where leave_word_id = #{leaveWordId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.chen.lvyou.entity.Leaveword" >
+    update t_leaveword
+    set title = #{title,jdbcType=VARCHAR},
+      leave_content = #{leaveContent,jdbcType=VARCHAR},
+      add_time = #{addTime,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=VARCHAR},
+      reply_content = #{replyContent,jdbcType=VARCHAR},
+      reply_time = #{replyTime,jdbcType=VARCHAR}
+    where leave_word_id = #{leaveWordId,jdbcType=INTEGER}
+  </update>
+</mapper>

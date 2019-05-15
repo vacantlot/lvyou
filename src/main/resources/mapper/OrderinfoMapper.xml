@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chen.lvyou.dao.OrderinfoDao" >
+  <resultMap id="BaseResultMap" type="com.chen.lvyou.entity.Orderinfo" >
+    <id column="order_id" property="orderId" jdbcType="INTEGER" />
+    <result column="scenic_id" property="scenicId" jdbcType="INTEGER" />
+    <result column="order_date" property="orderDate" jdbcType="VARCHAR" />
+    <result column="price" property="price" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="order_time" property="orderTime" jdbcType="VARCHAR" />
+    <result column="audit_State" property="auditState" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    order_id, scenic_id, order_date, price, user_id, order_time, audit_State
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_orderinfo
+    where order_id = #{orderId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_orderinfo
+    where order_id = #{orderId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.chen.lvyou.entity.Orderinfo" >
+    insert into t_orderinfo (order_id, scenic_id, order_date, 
+      price, user_id, order_time, 
+      audit_State)
+    values (#{orderId,jdbcType=INTEGER}, #{scenicId,jdbcType=INTEGER}, #{orderDate,jdbcType=VARCHAR}, 
+      #{price,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{orderTime,jdbcType=VARCHAR}, 
+      #{auditState,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.chen.lvyou.entity.Orderinfo" >
+    insert into t_orderinfo
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="orderId != null" >
+        order_id,
+      </if>
+      <if test="scenicId != null" >
+        scenic_id,
+      </if>
+      <if test="orderDate != null" >
+        order_date,
+      </if>
+      <if test="price != null" >
+        price,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="orderTime != null" >
+        order_time,
+      </if>
+      <if test="auditState != null" >
+        audit_State,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="orderId != null" >
+        #{orderId,jdbcType=INTEGER},
+      </if>
+      <if test="scenicId != null" >
+        #{scenicId,jdbcType=INTEGER},
+      </if>
+      <if test="orderDate != null" >
+        #{orderDate,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null" >
+        #{price,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="orderTime != null" >
+        #{orderTime,jdbcType=VARCHAR},
+      </if>
+      <if test="auditState != null" >
+        #{auditState,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.chen.lvyou.entity.Orderinfo" >
+    update t_orderinfo
+    <set >
+      <if test="scenicId != null" >
+        scenic_id = #{scenicId,jdbcType=INTEGER},
+      </if>
+      <if test="orderDate != null" >
+        order_date = #{orderDate,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null" >
+        price = #{price,jdbcType=VARCHAR},
+      </if>
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="orderTime != null" >
+        order_time = #{orderTime,jdbcType=VARCHAR},
+      </if>
+      <if test="auditState != null" >
+        audit_State = #{auditState,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where order_id = #{orderId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.chen.lvyou.entity.Orderinfo" >
+    update t_orderinfo
+    set scenic_id = #{scenicId,jdbcType=INTEGER},
+      order_date = #{orderDate,jdbcType=VARCHAR},
+      price = #{price,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=VARCHAR},
+      order_time = #{orderTime,jdbcType=VARCHAR},
+      audit_State = #{auditState,jdbcType=VARCHAR}
+    where order_id = #{orderId,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,444 @@
+2019-05-14 20:43:57.718 [RMI TCP Connection(3)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-14 20:43:59.140 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\AdminDao.class]
+2019-05-14 20:43:59.140 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\CityDao.class]
+2019-05-14 20:43:59.140 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\CommentDao.class]
+2019-05-14 20:43:59.140 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\LeavewordDao.class]
+2019-05-14 20:43:59.140 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\OrderinfoDao.class]
+2019-05-14 20:43:59.140 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\ScenicDao.class]
+2019-05-14 20:43:59.140 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\ScenictypeDao.class]
+2019-05-14 20:43:59.140 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoDao.class]
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'adminDao' and 'com.chen.lvyou.dao.AdminDao' mapperInterface
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'cityDao' and 'com.chen.lvyou.dao.CityDao' mapperInterface
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'cityDao'.
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'commentDao' and 'com.chen.lvyou.dao.CommentDao' mapperInterface
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'commentDao'.
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'leavewordDao' and 'com.chen.lvyou.dao.LeavewordDao' mapperInterface
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'leavewordDao'.
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'orderinfoDao' and 'com.chen.lvyou.dao.OrderinfoDao' mapperInterface
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'orderinfoDao'.
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scenicDao' and 'com.chen.lvyou.dao.ScenicDao' mapperInterface
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scenicDao'.
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scenictypeDao' and 'com.chen.lvyou.dao.ScenictypeDao' mapperInterface
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scenictypeDao'.
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.chen.lvyou.dao.UserinfoDao' mapperInterface
+2019-05-14 20:43:59.155 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoDao'.
+2019-05-14 20:44:02.343 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\AdminMapper.xml]'
+2019-05-14 20:44:02.374 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\CityMapper.xml]'
+2019-05-14 20:44:02.421 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\CommentMapper.xml]'
+2019-05-14 20:44:02.436 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\LeavewordMapper.xml]'
+2019-05-14 20:44:02.452 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\OrderinfoMapper.xml]'
+2019-05-14 20:44:02.468 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\ScenicMapper.xml]'
+2019-05-14 20:44:02.483 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\ScenictypeMapper.xml]'
+2019-05-14 20:44:02.515 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\UserinfoMapper.xml]'
+2019-05-14 20:44:14.850 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-05-14 20:44:14.872 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:14.897 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20f289b4] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:15.420 [http-nio-8080-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:15.420 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:15.484 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:15.538 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:15.538 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20f289b4]
+2019-05-14 20:44:15.538 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:15.538 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8a50e7] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:15.538 [http-nio-8080-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:15.538 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:15.538 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:15.538 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:15.538 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a8a50e7]
+2019-05-14 20:44:19.984 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.shiro.CustomRealm - ————权限认证————
+2019-05-14 20:44:19.993 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:19.994 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72337297] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:19.995 [http-nio-8080-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:19.996 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:19.996 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:19.999 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:19.999 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72337297]
+2019-05-14 20:44:20.000 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.shiro.CustomRealm - Userinfo{userId='1', password='123456', name='陈奕迅', telephone='18328730408', sex='', userPhoto='NULL', birthday='1996-03-09', address='成都市', role='user'}
+2019-05-14 20:44:20.000 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:20.002 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ab08d8b] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:20.002 [http-nio-8080-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:20.002 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:20.003 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:20.005 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:20.005 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ab08d8b]
+2019-05-14 20:44:20.012 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:20.012 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11b46340] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:20.105 [http-nio-8080-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:20.106 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - ==>  Preparing: SELECT count(0) FROM t_userinfo 
+2019-05-14 20:44:20.108 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - ==> Parameters: 
+2019-05-14 20:44:20.113 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - <==      Total: 1
+2019-05-14 20:44:20.116 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo LIMIT ? 
+2019-05-14 20:44:20.118 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - ==> Parameters: 10(Integer)
+2019-05-14 20:44:20.121 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - <==      Total: 2
+2019-05-14 20:44:20.121 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11b46340]
+2019-05-14 20:44:23.475 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.shiro.CustomRealm - ————权限认证————
+2019-05-14 20:44:23.476 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:23.476 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f1c673] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:23.477 [http-nio-8080-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:23.477 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:23.477 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:23.479 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:23.480 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f1c673]
+2019-05-14 20:44:23.481 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.shiro.CustomRealm - Userinfo{userId='1', password='123456', name='陈奕迅', telephone='18328730408', sex='', userPhoto='NULL', birthday='1996-03-09', address='成都市', role='user'}
+2019-05-14 20:44:23.481 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:23.481 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c09ad03] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:23.481 [http-nio-8080-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:23.482 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:23.482 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:23.485 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:23.485 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c09ad03]
+2019-05-14 20:44:23.501 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:23.501 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45a4618a] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:23.503 [http-nio-8080-exec-4] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:23.503 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.dao.UserinfoDao.selectByPrimaryKey - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where user_id = ? 
+2019-05-14 20:44:23.504 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.dao.UserinfoDao.selectByPrimaryKey - ==> Parameters: 1(String)
+2019-05-14 20:44:23.507 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.dao.UserinfoDao.selectByPrimaryKey - <==      Total: 1
+2019-05-14 20:44:23.508 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45a4618a]
+2019-05-14 20:44:27.419 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.shiro.CustomRealm - ————权限认证————
+2019-05-14 20:44:27.420 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:27.420 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e66e3c2] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:27.421 [http-nio-8080-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:27.421 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:27.422 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:27.425 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:27.426 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e66e3c2]
+2019-05-14 20:44:27.427 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.shiro.CustomRealm - Userinfo{userId='1', password='123456', name='陈奕迅', telephone='18328730408', sex='', userPhoto='NULL', birthday='1996-03-09', address='成都市', role='user'}
+2019-05-14 20:44:27.427 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:27.427 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36e23c74] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:27.428 [http-nio-8080-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:27.428 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:27.428 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:27.430 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:27.431 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36e23c74]
+2019-05-14 20:44:27.434 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:27.434 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d74ab04] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:27.435 [http-nio-8080-exec-5] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:27.436 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.dao.UserinfoDao.selectByPrimaryKey - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where user_id = ? 
+2019-05-14 20:44:27.436 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.dao.UserinfoDao.selectByPrimaryKey - ==> Parameters: 2(String)
+2019-05-14 20:44:27.438 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.dao.UserinfoDao.selectByPrimaryKey - <==      Total: 1
+2019-05-14 20:44:27.438 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d74ab04]
+2019-05-14 20:44:31.961 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.shiro.CustomRealm - ————权限认证————
+2019-05-14 20:44:31.961 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:31.961 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f84f2a2] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:31.962 [http-nio-8080-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:31.962 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:31.962 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:31.964 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:31.965 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f84f2a2]
+2019-05-14 20:44:31.965 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.shiro.CustomRealm - Userinfo{userId='1', password='123456', name='陈奕迅', telephone='18328730408', sex='', userPhoto='NULL', birthday='1996-03-09', address='成都市', role='user'}
+2019-05-14 20:44:31.965 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:31.966 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@357c99d2] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:31.966 [http-nio-8080-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:31.967 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:31.967 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:31.972 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:31.973 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@357c99d2]
+2019-05-14 20:44:31.975 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:31.975 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41c4f061] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:31.977 [http-nio-8080-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:31.977 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - ==>  Preparing: SELECT count(0) FROM t_userinfo 
+2019-05-14 20:44:31.978 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - ==> Parameters: 
+2019-05-14 20:44:31.979 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - <==      Total: 1
+2019-05-14 20:44:31.981 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo LIMIT ? 
+2019-05-14 20:44:31.982 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - ==> Parameters: 10(Integer)
+2019-05-14 20:44:31.987 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - <==      Total: 2
+2019-05-14 20:44:31.989 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41c4f061]
+2019-05-14 20:44:33.588 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.shiro.CustomRealm - ————权限认证————
+2019-05-14 20:44:33.588 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:33.588 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4135af0] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:33.589 [http-nio-8080-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:33.589 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:33.590 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:33.592 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:33.593 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4135af0]
+2019-05-14 20:44:33.594 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.shiro.CustomRealm - Userinfo{userId='1', password='123456', name='陈奕迅', telephone='18328730408', sex='', userPhoto='NULL', birthday='1996-03-09', address='成都市', role='user'}
+2019-05-14 20:44:33.594 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:33.595 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be9ae39] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:33.595 [http-nio-8080-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:33.596 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:33.596 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:33.599 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:33.600 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4be9ae39]
+2019-05-14 20:44:33.602 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:33.602 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63f675b9] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:33.604 [http-nio-8080-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:33.604 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - ==>  Preparing: SELECT count(0) FROM t_userinfo 
+2019-05-14 20:44:33.605 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - ==> Parameters: 
+2019-05-14 20:44:33.606 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - <==      Total: 1
+2019-05-14 20:44:33.608 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo LIMIT ? 
+2019-05-14 20:44:33.608 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - ==> Parameters: 10(Integer)
+2019-05-14 20:44:33.612 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - <==      Total: 2
+2019-05-14 20:44:33.613 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63f675b9]
+2019-05-14 20:44:35.116 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.shiro.CustomRealm - ————权限认证————
+2019-05-14 20:44:35.117 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:35.117 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49f0758d] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:35.117 [http-nio-8080-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:35.117 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:35.118 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:35.121 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:35.121 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49f0758d]
+2019-05-14 20:44:35.122 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.shiro.CustomRealm - Userinfo{userId='1', password='123456', name='陈奕迅', telephone='18328730408', sex='', userPhoto='NULL', birthday='1996-03-09', address='成都市', role='user'}
+2019-05-14 20:44:35.122 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:35.122 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52450ae3] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:35.123 [http-nio-8080-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:35.124 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 20:44:35.125 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 20:44:35.128 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 20:44:35.129 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52450ae3]
+2019-05-14 20:44:35.130 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 20:44:35.131 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@529abec0] was not registered for synchronization because synchronization is not active
+2019-05-14 20:44:35.132 [http-nio-8080-exec-9] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60d8700] will not be managed by Spring
+2019-05-14 20:44:35.133 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - ==>  Preparing: SELECT count(0) FROM t_userinfo 
+2019-05-14 20:44:35.133 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - ==> Parameters: 
+2019-05-14 20:44:35.135 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - <==      Total: 1
+2019-05-14 20:44:35.136 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo LIMIT ? 
+2019-05-14 20:44:35.137 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - ==> Parameters: 10(Integer)
+2019-05-14 20:44:35.140 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - <==      Total: 2
+2019-05-14 20:44:35.141 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@529abec0]
+2019-05-14 21:03:32.060 [RMI TCP Connection(3)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-14 21:03:33.428 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\AdminDao.class]
+2019-05-14 21:03:33.429 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\CityDao.class]
+2019-05-14 21:03:33.429 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\CommentDao.class]
+2019-05-14 21:03:33.429 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\LeavewordDao.class]
+2019-05-14 21:03:33.429 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\OrderinfoDao.class]
+2019-05-14 21:03:33.429 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\ScenicDao.class]
+2019-05-14 21:03:33.429 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\ScenictypeDao.class]
+2019-05-14 21:03:33.430 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoDao.class]
+2019-05-14 21:03:33.431 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'adminDao' and 'com.chen.lvyou.dao.AdminDao' mapperInterface
+2019-05-14 21:03:33.432 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2019-05-14 21:03:33.432 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'cityDao' and 'com.chen.lvyou.dao.CityDao' mapperInterface
+2019-05-14 21:03:33.432 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'cityDao'.
+2019-05-14 21:03:33.432 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'commentDao' and 'com.chen.lvyou.dao.CommentDao' mapperInterface
+2019-05-14 21:03:33.433 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'commentDao'.
+2019-05-14 21:03:33.433 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'leavewordDao' and 'com.chen.lvyou.dao.LeavewordDao' mapperInterface
+2019-05-14 21:03:33.433 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'leavewordDao'.
+2019-05-14 21:03:33.433 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'orderinfoDao' and 'com.chen.lvyou.dao.OrderinfoDao' mapperInterface
+2019-05-14 21:03:33.433 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'orderinfoDao'.
+2019-05-14 21:03:33.433 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scenicDao' and 'com.chen.lvyou.dao.ScenicDao' mapperInterface
+2019-05-14 21:03:33.434 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scenicDao'.
+2019-05-14 21:03:33.434 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scenictypeDao' and 'com.chen.lvyou.dao.ScenictypeDao' mapperInterface
+2019-05-14 21:03:33.434 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scenictypeDao'.
+2019-05-14 21:03:33.434 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.chen.lvyou.dao.UserinfoDao' mapperInterface
+2019-05-14 21:03:33.435 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoDao'.
+2019-05-14 21:03:36.598 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\AdminMapper.xml]'
+2019-05-14 21:03:36.620 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\CityMapper.xml]'
+2019-05-14 21:03:36.644 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\CommentMapper.xml]'
+2019-05-14 21:03:36.669 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\LeavewordMapper.xml]'
+2019-05-14 21:03:36.696 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\OrderinfoMapper.xml]'
+2019-05-14 21:03:36.717 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\ScenicMapper.xml]'
+2019-05-14 21:03:36.733 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\ScenictypeMapper.xml]'
+2019-05-14 21:03:36.757 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\UserinfoMapper.xml]'
+2019-05-14 21:07:35.885 [RMI TCP Connection(3)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-14 21:07:37.478 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\AdminDao.class]
+2019-05-14 21:07:37.478 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\CityDao.class]
+2019-05-14 21:07:37.479 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\CommentDao.class]
+2019-05-14 21:07:37.479 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\LeavewordDao.class]
+2019-05-14 21:07:37.479 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\OrderinfoDao.class]
+2019-05-14 21:07:37.479 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\ScenicDao.class]
+2019-05-14 21:07:37.480 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\ScenictypeDao.class]
+2019-05-14 21:07:37.480 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoDao.class]
+2019-05-14 21:07:37.481 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'adminDao' and 'com.chen.lvyou.dao.AdminDao' mapperInterface
+2019-05-14 21:07:37.482 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2019-05-14 21:07:37.483 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'cityDao' and 'com.chen.lvyou.dao.CityDao' mapperInterface
+2019-05-14 21:07:37.483 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'cityDao'.
+2019-05-14 21:07:37.483 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'commentDao' and 'com.chen.lvyou.dao.CommentDao' mapperInterface
+2019-05-14 21:07:37.483 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'commentDao'.
+2019-05-14 21:07:37.484 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'leavewordDao' and 'com.chen.lvyou.dao.LeavewordDao' mapperInterface
+2019-05-14 21:07:37.484 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'leavewordDao'.
+2019-05-14 21:07:37.484 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'orderinfoDao' and 'com.chen.lvyou.dao.OrderinfoDao' mapperInterface
+2019-05-14 21:07:37.484 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'orderinfoDao'.
+2019-05-14 21:07:37.484 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scenicDao' and 'com.chen.lvyou.dao.ScenicDao' mapperInterface
+2019-05-14 21:07:37.485 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scenicDao'.
+2019-05-14 21:07:37.485 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scenictypeDao' and 'com.chen.lvyou.dao.ScenictypeDao' mapperInterface
+2019-05-14 21:07:37.485 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scenictypeDao'.
+2019-05-14 21:07:37.485 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.chen.lvyou.dao.UserinfoDao' mapperInterface
+2019-05-14 21:07:37.485 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoDao'.
+2019-05-14 21:07:40.868 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\AdminMapper.xml]'
+2019-05-14 21:07:40.886 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\CityMapper.xml]'
+2019-05-14 21:07:40.907 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\CommentMapper.xml]'
+2019-05-14 21:07:40.937 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\LeavewordMapper.xml]'
+2019-05-14 21:07:40.957 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\OrderinfoMapper.xml]'
+2019-05-14 21:07:40.983 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\ScenicMapper.xml]'
+2019-05-14 21:07:40.996 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\ScenictypeMapper.xml]'
+2019-05-14 21:07:41.020 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\UserinfoMapper.xml]'
+2019-05-14 21:08:49.514 [RMI TCP Connection(3)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-14 21:08:51.094 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\AdminDao.class]
+2019-05-14 21:08:51.095 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\CityDao.class]
+2019-05-14 21:08:51.095 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\CommentDao.class]
+2019-05-14 21:08:51.095 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\LeavewordDao.class]
+2019-05-14 21:08:51.095 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\OrderinfoDao.class]
+2019-05-14 21:08:51.096 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\ScenicDao.class]
+2019-05-14 21:08:51.096 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\ScenictypeDao.class]
+2019-05-14 21:08:51.096 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoDao.class]
+2019-05-14 21:08:51.097 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'adminDao' and 'com.chen.lvyou.dao.AdminDao' mapperInterface
+2019-05-14 21:08:51.098 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2019-05-14 21:08:51.098 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'cityDao' and 'com.chen.lvyou.dao.CityDao' mapperInterface
+2019-05-14 21:08:51.098 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'cityDao'.
+2019-05-14 21:08:51.098 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'commentDao' and 'com.chen.lvyou.dao.CommentDao' mapperInterface
+2019-05-14 21:08:51.098 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'commentDao'.
+2019-05-14 21:08:51.098 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'leavewordDao' and 'com.chen.lvyou.dao.LeavewordDao' mapperInterface
+2019-05-14 21:08:51.099 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'leavewordDao'.
+2019-05-14 21:08:51.099 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'orderinfoDao' and 'com.chen.lvyou.dao.OrderinfoDao' mapperInterface
+2019-05-14 21:08:51.100 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'orderinfoDao'.
+2019-05-14 21:08:51.100 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scenicDao' and 'com.chen.lvyou.dao.ScenicDao' mapperInterface
+2019-05-14 21:08:51.100 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scenicDao'.
+2019-05-14 21:08:51.100 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scenictypeDao' and 'com.chen.lvyou.dao.ScenictypeDao' mapperInterface
+2019-05-14 21:08:51.101 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scenictypeDao'.
+2019-05-14 21:08:51.101 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.chen.lvyou.dao.UserinfoDao' mapperInterface
+2019-05-14 21:08:51.101 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoDao'.
+2019-05-14 21:08:54.401 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\AdminMapper.xml]'
+2019-05-14 21:08:54.420 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\CityMapper.xml]'
+2019-05-14 21:08:54.442 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\CommentMapper.xml]'
+2019-05-14 21:08:54.465 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\LeavewordMapper.xml]'
+2019-05-14 21:08:54.486 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\OrderinfoMapper.xml]'
+2019-05-14 21:08:54.521 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\ScenicMapper.xml]'
+2019-05-14 21:08:54.537 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\ScenictypeMapper.xml]'
+2019-05-14 21:08:54.563 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\UserinfoMapper.xml]'
+2019-05-14 21:09:17.757 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-05-14 21:09:17.777 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:09:17.803 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d4ce600] was not registered for synchronization because synchronization is not active
+2019-05-14 21:09:18.420 [http-nio-8080-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:09:18.429 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 21:09:18.495 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 21:09:18.556 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 21:09:18.558 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d4ce600]
+2019-05-14 21:09:18.571 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:09:18.571 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a48dee5] was not registered for synchronization because synchronization is not active
+2019-05-14 21:09:18.572 [http-nio-8080-exec-8] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:09:18.573 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 21:09:18.573 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 21:09:18.578 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 21:09:18.579 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a48dee5]
+2019-05-14 21:09:25.079 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.shiro.CustomRealm - ————权限认证————
+2019-05-14 21:09:25.091 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:09:25.092 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@451ab8bc] was not registered for synchronization because synchronization is not active
+2019-05-14 21:09:25.093 [http-nio-8080-exec-10] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:09:25.093 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 21:09:25.094 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 21:09:25.096 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 21:09:25.097 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@451ab8bc]
+2019-05-14 21:09:25.098 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.shiro.CustomRealm - Userinfo{userId='1', password='123456', name='陈奕迅', telephone='18328730408', sex='', userPhoto='NULL', birthday='1996-03-09', address='成都市', role='user'}
+2019-05-14 21:09:25.098 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:09:25.098 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@593df107] was not registered for synchronization because synchronization is not active
+2019-05-14 21:09:25.098 [http-nio-8080-exec-10] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:09:25.098 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 21:09:25.099 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 21:09:25.101 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 21:09:25.102 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@593df107]
+2019-05-14 21:09:25.106 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:09:25.106 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56b4a1fc] was not registered for synchronization because synchronization is not active
+2019-05-14 21:09:25.172 [http-nio-8080-exec-10] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:09:25.172 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - ==>  Preparing: SELECT count(0) FROM t_userinfo 
+2019-05-14 21:09:25.173 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - ==> Parameters: 
+2019-05-14 21:09:25.177 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser_COUNT - <==      Total: 1
+2019-05-14 21:09:25.180 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo LIMIT ? 
+2019-05-14 21:09:25.182 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - ==> Parameters: 10(Integer)
+2019-05-14 21:09:25.184 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.selectAllUser - <==      Total: 2
+2019-05-14 21:09:25.184 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@56b4a1fc]
+2019-05-14 21:09:45.948 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-05-14 21:09:45.949 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:09:45.949 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@729f55da] was not registered for synchronization because synchronization is not active
+2019-05-14 21:09:45.949 [http-nio-8080-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:09:45.950 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 21:09:45.950 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 21:09:45.952 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 21:09:45.953 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@729f55da]
+2019-05-14 21:09:45.954 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:09:45.954 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2339087d] was not registered for synchronization because synchronization is not active
+2019-05-14 21:09:45.955 [http-nio-8080-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:09:45.955 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 21:09:45.955 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈奕迅(String)
+2019-05-14 21:09:45.958 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 21:09:45.959 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2339087d]
+2019-05-14 21:19:55.809 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:19:55.809 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24479165] was not registered for synchronization because synchronization is not active
+2019-05-14 21:19:55.866 [http-nio-8080-exec-10] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:19:55.866 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - ==>  Preparing: insert into t_userinfo ( password, name ) values ( ?, ? ) 
+2019-05-14 21:19:55.867 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - ==> Parameters: 123456(String), 张三(String)
+2019-05-14 21:19:55.873 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - <==    Updates: 1
+2019-05-14 21:19:55.874 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24479165]
+2019-05-14 21:20:07.921 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:20:07.922 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@277757fd] was not registered for synchronization because synchronization is not active
+2019-05-14 21:20:07.922 [http-nio-8080-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:20:07.922 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - ==>  Preparing: insert into t_userinfo ( password, name ) values ( ?, ? ) 
+2019-05-14 21:20:07.923 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - ==> Parameters: 123456(String), 李四(String)
+2019-05-14 21:20:07.927 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - <==    Updates: 1
+2019-05-14 21:20:07.927 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@277757fd]
+2019-05-14 21:20:22.617 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:20:22.617 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f5a8740] was not registered for synchronization because synchronization is not active
+2019-05-14 21:20:22.618 [http-nio-8080-exec-7] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:20:22.618 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - ==>  Preparing: insert into t_userinfo ( password, name ) values ( ?, ? ) 
+2019-05-14 21:20:22.619 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - ==> Parameters: 123456(String), 王五(String)
+2019-05-14 21:20:22.621 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - <==    Updates: 1
+2019-05-14 21:20:22.623 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f5a8740]
+2019-05-14 21:21:01.241 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:21:01.241 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79c58f41] was not registered for synchronization because synchronization is not active
+2019-05-14 21:21:01.242 [http-nio-8080-exec-10] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:21:01.242 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - ==>  Preparing: insert into t_userinfo ( password, name ) values ( ?, ? ) 
+2019-05-14 21:21:01.243 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - ==> Parameters: 123456(String), 陈六(String)
+2019-05-14 21:21:01.248 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.dao.UserinfoDao.insertSelective - <==    Updates: 1
+2019-05-14 21:21:01.249 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79c58f41]
+2019-05-14 21:21:13.320 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-05-14 21:21:13.321 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:21:13.321 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62ac27f3] was not registered for synchronization because synchronization is not active
+2019-05-14 21:21:13.321 [http-nio-8080-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:21:13.322 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 21:21:13.322 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈六(String)
+2019-05-14 21:21:13.325 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 21:21:13.325 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62ac27f3]
+2019-05-14 21:21:13.326 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:21:13.326 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c2ba3e] was not registered for synchronization because synchronization is not active
+2019-05-14 21:21:13.326 [http-nio-8080-exec-3] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:21:13.326 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 21:21:13.327 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈六(String)
+2019-05-14 21:21:13.330 [http-nio-8080-exec-3] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 21:21:13.331 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c2ba3e]
+2019-05-14 21:30:45.095 [http-nio-8080-exec-6] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-05-14 21:30:45.095 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:30:45.096 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@256dbf06] was not registered for synchronization because synchronization is not active
+2019-05-14 21:30:45.113 [http-nio-8080-exec-6] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:30:45.114 [http-nio-8080-exec-6] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 21:30:45.114 [http-nio-8080-exec-6] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈六(String)
+2019-05-14 21:30:45.116 [http-nio-8080-exec-6] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 21:30:45.117 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@256dbf06]
+2019-05-14 21:30:45.118 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-05-14 21:30:45.119 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4775f3f2] was not registered for synchronization because synchronization is not active
+2019-05-14 21:30:45.119 [http-nio-8080-exec-6] DEBUG o.m.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@fb19129] will not be managed by Spring
+2019-05-14 21:30:45.120 [http-nio-8080-exec-6] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==>  Preparing: select user_id, password, name, telephone, sex, user_photo, birthday, address, role from t_userinfo where name = ? 
+2019-05-14 21:30:45.121 [http-nio-8080-exec-6] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - ==> Parameters: 陈六(String)
+2019-05-14 21:30:45.123 [http-nio-8080-exec-6] DEBUG com.chen.lvyou.dao.UserinfoDao.findByUsername - <==      Total: 1
+2019-05-14 21:30:45.124 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4775f3f2]
+2019-05-14 21:31:22.400 [RMI TCP Connection(3)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-14 21:31:23.800 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\AdminDao.class]
+2019-05-14 21:31:23.800 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\CityDao.class]
+2019-05-14 21:31:23.800 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\CommentDao.class]
+2019-05-14 21:31:23.800 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\LeavewordDao.class]
+2019-05-14 21:31:23.801 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\OrderinfoDao.class]
+2019-05-14 21:31:23.801 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\ScenicDao.class]
+2019-05-14 21:31:23.801 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\ScenictypeDao.class]
+2019-05-14 21:31:23.802 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoDao.class]
+2019-05-14 21:31:23.803 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'adminDao' and 'com.chen.lvyou.dao.AdminDao' mapperInterface
+2019-05-14 21:31:23.804 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2019-05-14 21:31:23.804 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'cityDao' and 'com.chen.lvyou.dao.CityDao' mapperInterface
+2019-05-14 21:31:23.804 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'cityDao'.
+2019-05-14 21:31:23.805 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'commentDao' and 'com.chen.lvyou.dao.CommentDao' mapperInterface
+2019-05-14 21:31:23.805 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'commentDao'.
+2019-05-14 21:31:23.805 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'leavewordDao' and 'com.chen.lvyou.dao.LeavewordDao' mapperInterface
+2019-05-14 21:31:23.805 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'leavewordDao'.
+2019-05-14 21:31:23.805 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'orderinfoDao' and 'com.chen.lvyou.dao.OrderinfoDao' mapperInterface
+2019-05-14 21:31:23.805 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'orderinfoDao'.
+2019-05-14 21:31:23.805 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scenicDao' and 'com.chen.lvyou.dao.ScenicDao' mapperInterface
+2019-05-14 21:31:23.806 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scenicDao'.
+2019-05-14 21:31:23.806 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'scenictypeDao' and 'com.chen.lvyou.dao.ScenictypeDao' mapperInterface
+2019-05-14 21:31:23.806 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'scenictypeDao'.
+2019-05-14 21:31:23.806 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.chen.lvyou.dao.UserinfoDao' mapperInterface
+2019-05-14 21:31:23.806 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoDao'.
+2019-05-14 21:31:27.098 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\AdminMapper.xml]'
+2019-05-14 21:31:27.119 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\CityMapper.xml]'
+2019-05-14 21:31:27.152 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\CommentMapper.xml]'
+2019-05-14 21:31:27.176 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\LeavewordMapper.xml]'
+2019-05-14 21:31:27.197 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\OrderinfoMapper.xml]'
+2019-05-14 21:31:27.221 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\ScenicMapper.xml]'
+2019-05-14 21:31:27.237 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\ScenictypeMapper.xml]'
+2019-05-14 21:31:27.261 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\mapper\UserinfoMapper.xml]'

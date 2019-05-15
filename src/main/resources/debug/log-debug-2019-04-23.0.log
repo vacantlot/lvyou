@@ -1,0 +1,106 @@
+2019-04-23 09:46:59.155 [RMI TCP Connection(2)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 09:47:01.390 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 09:47:01.390 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 09:47:01.421 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 09:47:01.421 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 09:47:01.421 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 09:47:05.942 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-04-23 09:54:39.990 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 10:00:56.501 [RMI TCP Connection(2)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 10:00:59.295 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 10:00:59.295 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 10:00:59.311 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 10:00:59.327 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 10:00:59.342 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 10:01:04.769 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-04-23 10:01:15.075 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 10:13:04.838 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 10:24:31.375 [http-nio-8080-exec-2] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 10:24:49.574 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.shiro.CustomRealm - ————权限认证————
+2019-04-23 10:24:49.860 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.shiro.CustomRealm - Userinfo{userId='2', password='123456', name='陈奕迅', telephone='18328730408', sex='null', userPhoto='null', birthday='null', address='null', role='user'}
+2019-04-23 10:56:21.135 [http-nio-8080-exec-6] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 11:29:30.641 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 11:46:39.262 [RMI TCP Connection(2)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 11:46:41.931 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 11:46:41.932 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 11:46:41.953 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 11:46:41.956 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 11:46:41.957 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 11:46:47.378 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-04-23 11:47:06.060 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 11:48:22.871 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 11:48:56.742 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 11:49:04.634 [http-nio-8080-exec-2] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 13:06:15.997 [RMI TCP Connection(4)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 13:06:19.270 [RMI TCP Connection(4)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 13:06:19.271 [RMI TCP Connection(4)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 13:06:19.293 [RMI TCP Connection(4)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 13:06:19.297 [RMI TCP Connection(4)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 13:06:19.298 [RMI TCP Connection(4)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 13:06:27.919 [RMI TCP Connection(4)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-04-23 13:06:46.405 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 13:10:21.716 [RMI TCP Connection(2)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 13:10:24.150 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 13:10:24.151 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 13:10:24.172 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 13:10:24.178 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 13:10:24.179 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 13:10:29.767 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-04-23 13:10:46.092 [http-nio-8080-exec-7] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 13:11:59.236 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 13:15:55.412 [RMI TCP Connection(2)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 13:15:58.161 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 13:15:58.161 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 13:15:58.191 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 13:15:58.198 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 13:15:58.199 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 13:16:03.671 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-04-23 13:17:19.620 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 14:39:04.620 [RMI TCP Connection(2)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 14:39:07.579 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 14:39:07.580 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 14:39:07.609 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 14:39:07.613 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 14:39:07.614 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 14:39:13.088 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-04-23 14:39:31.306 [http-nio-8080-exec-8] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 14:41:43.834 [RMI TCP Connection(3)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 14:41:47.236 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 14:41:47.237 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 14:41:47.293 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 14:41:47.307 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 14:41:47.309 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 14:41:54.207 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-04-23 14:42:09.341 [http-nio-8080-exec-5] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 14:44:01.864 [RMI TCP Connection(2)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 14:44:04.452 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 14:44:04.453 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 14:44:04.473 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 14:44:04.477 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 14:44:04.478 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 14:44:09.883 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-04-23 14:48:25.849 [http-nio-8080-exec-9] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 15:08:43.136 [RMI TCP Connection(2)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 15:08:45.540 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 15:08:45.540 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 15:08:45.563 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 15:08:45.566 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 15:08:45.567 [RMI TCP Connection(2)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 15:08:50.915 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-04-23 15:09:02.002 [http-nio-8080-exec-6] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 15:54:04.521 [http-nio-8080-exec-4] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 15:58:03.872 [http-nio-8080-exec-10] DEBUG com.chen.lvyou.shiro.CustomRealm - ————身份认证方法————
+2019-04-23 16:06:43.940 [RMI TCP Connection(3)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 16:06:46.641 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 16:06:46.642 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 16:06:46.671 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 16:06:46.689 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 16:06:46.690 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 16:06:53.312 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.
+2019-04-23 17:16:28.620 [RMI TCP Connection(3)-127.0.0.1] DEBUG com.chen.lvyou.ServletInitializer - Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-23 17:16:31.855 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2019-04-23 17:16:31.856 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - Using auto-configuration base package 'com.chen.lvyou'
+2019-04-23 17:16:31.886 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [F:\IdeaProjects\lvyou\classes\artifacts\lvyou_war_exploded\WEB-INF\classes\com\chen\lvyou\dao\UserinfoMapper.class]
+2019-04-23 17:16:31.898 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoMapper' and 'com.chen.lvyou.dao.UserinfoMapper' mapperInterface
+2019-04-23 17:16:31.899 [RMI TCP Connection(3)-127.0.0.1] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userinfoMapper'.
+2019-04-23 17:16:38.715 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.m.s.boot.autoconfigure.MybatisAutoConfiguration - No org.mybatis.spring.mapper.MapperFactoryBean found.

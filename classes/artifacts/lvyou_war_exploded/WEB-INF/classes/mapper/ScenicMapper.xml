@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chen.lvyou.dao.ScenicDao" >
+  <resultMap id="BaseResultMap" type="com.chen.lvyou.entity.Scenic" >
+    <id column="scenic_id" property="scenicId" jdbcType="INTEGER" />
+    <result column="city_id" property="cityId" jdbcType="VARCHAR" />
+    <result column="scenic_type_id" property="scenicTypeId" jdbcType="INTEGER" />
+    <result column="scenic_level" property="scenicLevel" jdbcType="VARCHAR" />
+    <result column="scenic_name" property="scenicName" jdbcType="VARCHAR" />
+    <result column="scenic_photo" property="scenicPhoto" jdbcType="VARCHAR" />
+    <result column="scenic_desc" property="scenicDesc" jdbcType="VARCHAR" />
+    <result column="price" property="price" jdbcType="VARCHAR" />
+    <result column="open_time" property="openTime" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    scenic_id, city_id, scenic_type_id, scenic_level, scenic_name, scenic_photo, scenic_desc, 
+    price, open_time, address
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_scenic
+    where scenic_id = #{scenicId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_scenic
+    where scenic_id = #{scenicId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.chen.lvyou.entity.Scenic" >
+    insert into t_scenic (scenic_id, city_id, scenic_type_id, 
+      scenic_level, scenic_name, scenic_photo, 
+      scenic_desc, price, open_time, 
+      address)
+    values (#{scenicId,jdbcType=INTEGER}, #{cityId,jdbcType=VARCHAR}, #{scenicTypeId,jdbcType=INTEGER}, 
+      #{scenicLevel,jdbcType=VARCHAR}, #{scenicName,jdbcType=VARCHAR}, #{scenicPhoto,jdbcType=VARCHAR}, 
+      #{scenicDesc,jdbcType=VARCHAR}, #{price,jdbcType=VARCHAR}, #{openTime,jdbcType=VARCHAR}, 
+      #{address,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.chen.lvyou.entity.Scenic" >
+    insert into t_scenic
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="scenicId != null" >
+        scenic_id,
+      </if>
+      <if test="cityId != null" >
+        city_id,
+      </if>
+      <if test="scenicTypeId != null" >
+        scenic_type_id,
+      </if>
+      <if test="scenicLevel != null" >
+        scenic_level,
+      </if>
+      <if test="scenicName != null" >
+        scenic_name,
+      </if>
+      <if test="scenicPhoto != null" >
+        scenic_photo,
+      </if>
+      <if test="scenicDesc != null" >
+        scenic_desc,
+      </if>
+      <if test="price != null" >
+        price,
+      </if>
+      <if test="openTime != null" >
+        open_time,
+      </if>
+      <if test="address != null" >
+        address,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="scenicId != null" >
+        #{scenicId,jdbcType=INTEGER},
+      </if>
+      <if test="cityId != null" >
+        #{cityId,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicTypeId != null" >
+        #{scenicTypeId,jdbcType=INTEGER},
+      </if>
+      <if test="scenicLevel != null" >
+        #{scenicLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicName != null" >
+        #{scenicName,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicPhoto != null" >
+        #{scenicPhoto,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicDesc != null" >
+        #{scenicDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null" >
+        #{price,jdbcType=VARCHAR},
+      </if>
+      <if test="openTime != null" >
+        #{openTime,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.chen.lvyou.entity.Scenic" >
+    update t_scenic
+    <set >
+      <if test="cityId != null" >
+        city_id = #{cityId,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicTypeId != null" >
+        scenic_type_id = #{scenicTypeId,jdbcType=INTEGER},
+      </if>
+      <if test="scenicLevel != null" >
+        scenic_level = #{scenicLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicName != null" >
+        scenic_name = #{scenicName,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicPhoto != null" >
+        scenic_photo = #{scenicPhoto,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicDesc != null" >
+        scenic_desc = #{scenicDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null" >
+        price = #{price,jdbcType=VARCHAR},
+      </if>
+      <if test="openTime != null" >
+        open_time = #{openTime,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where scenic_id = #{scenicId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.chen.lvyou.entity.Scenic" >
+    update t_scenic
+    set city_id = #{cityId,jdbcType=VARCHAR},
+      scenic_type_id = #{scenicTypeId,jdbcType=INTEGER},
+      scenic_level = #{scenicLevel,jdbcType=VARCHAR},
+      scenic_name = #{scenicName,jdbcType=VARCHAR},
+      scenic_photo = #{scenicPhoto,jdbcType=VARCHAR},
+      scenic_desc = #{scenicDesc,jdbcType=VARCHAR},
+      price = #{price,jdbcType=VARCHAR},
+      open_time = #{openTime,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR}
+    where scenic_id = #{scenicId,jdbcType=INTEGER}
+  </update>
+</mapper>

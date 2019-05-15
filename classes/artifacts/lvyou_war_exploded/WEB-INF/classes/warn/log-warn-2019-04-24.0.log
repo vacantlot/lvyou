@@ -1,0 +1,6 @@
+2019-04-24 10:05:36.554 [RMI TCP Connection(2)-127.0.0.1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.chen.lvyou.mapper]' package. Please check your configuration.
+2019-04-24 11:08:06.294 [RMI TCP Connection(2)-127.0.0.1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.chen.lvyou.mapper]' package. Please check your configuration.
+2019-04-24 11:31:24.911 [RMI TCP Connection(2)-127.0.0.1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.chen.lvyou.mapper]' package. Please check your configuration.
+2019-04-24 14:22:25.716 [RMI TCP Connection(2)-127.0.0.1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.chen.lvyou.mapper]' package. Please check your configuration.
+2019-04-24 14:27:42.670 [RMI TCP Connection(2)-127.0.0.1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.chen.lvyou.mapper]' package. Please check your configuration.
+2019-04-24 14:53:10.561 [RMI TCP Connection(2)-127.0.0.1] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.chen.lvyou.mapper]' package. Please check your configuration.
