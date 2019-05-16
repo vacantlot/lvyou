@@ -1,7 +1,7 @@
 <%@ page language="java" import="java.util.*"  contentType="text/html;charset=UTF-8"%> 
-<%@ page import="com.shuangyulin.po.Comment" %>
-<%@ page import="com.shuangyulin.po.Scenic" %>
-<%@ page import="com.shuangyulin.po.UserInfo" %>
+<%@ page import="com.chen.lvyou.entity.Comment" %>
+<%@ page import="com.chen.lvyou.entity.Scenic" %>
+<%@ page import="com.chen.lvyou.entity.Userinfo" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -9,13 +9,13 @@
     //获取所有的scenicObj信息
     List<Scenic> scenicList = (List<Scenic>)request.getAttribute("scenicList");
     //获取所有的userObj信息
-    List<UserInfo> userInfoList = (List<UserInfo>)request.getAttribute("userInfoList");
+    List<Userinfo> userInfoList = (List<Userinfo>)request.getAttribute("userInfoList");
     int currentPage =  (Integer)request.getAttribute("currentPage"); //当前页
     int totalPage =   (Integer)request.getAttribute("totalPage");  //一共多少页
     int recordNumber =   (Integer)request.getAttribute("recordNumber");  //一共多少记录
     Scenic scenicObj = (Scenic)request.getAttribute("scenicObj");
     String commentContent = (String)request.getAttribute("commentContent"); //评论内容查询关键字
-    UserInfo userObj = (UserInfo)request.getAttribute("userObj");
+    Userinfo userObj = (Userinfo)request.getAttribute("userObj");
     String commentTime = (String)request.getAttribute("commentTime"); //评论时间查询关键字
 %>
 <!DOCTYPE html>
@@ -62,9 +62,9 @@
  										<tr>
  											<td><%=currentIndex %></td>
  											<td><%=comment.getCommentId() %></td>
- 											<td><%=comment.getScenicObj().getScenicName() %></td>
- 											<td><%=comment.getCommentContent() %></td>
- 											<td><%=comment.getUserObj().getName() %></td>
+ 											<td><%=scenicList.get(0).getScenicName() %></td>
+ 											<td><%=comment.getCommentcontent() %></td>
+ 											<td><%=userObj.getName() %></td>
  											<td><%=comment.getCommentTime() %></td>
  											<td>
  												<a href="<%=basePath  %>Comment/<%=comment.getCommentId() %>/frontshow"><i class="fa fa-info"></i>&nbsp;查看</a>&nbsp;
@@ -138,12 +138,12 @@
                 <select id="userObj_user_name" name="userObj.user_name" class="form-control">
                 	<option value="">不限制</option>
 	 				<%
-	 				for(UserInfo userInfoTemp:userInfoList) {
+	 				for(Userinfo userInfoTemp:userInfoList) {
 	 					String selected = "";
- 					if(userObj!=null && userObj.getUser_name()!=null && userObj.getUser_name().equals(userInfoTemp.getUser_name()))
+ 					if(userObj!=null && userObj.getUserId()!=null && userObj.getUserId().equals(userInfoTemp.getUserId()))
  						selected = "selected";
 	 				%>
- 				 <option value="<%=userInfoTemp.getUser_name() %>" <%=selected %>><%=userInfoTemp.getName() %></option>
+ 				 <option value="<%=userInfoTemp.getUserId() %>" <%=selected %>><%=userInfoTemp.getName() %></option>
 	 				<%
 	 				}
 	 				%>

@@ -1,19 +1,28 @@
 <%@ page language="java" import="java.util.*"  contentType="text/html;charset=UTF-8"%> 
-<%@ page import="com.shuangyulin.po.LeaveWord" %>
-<%@ page import="com.shuangyulin.po.UserInfo" %>
+<%@ page import="com.chen.lvyou.entity.LeaveWord" %>
+<%@ page import="com.chen.lvyou.entity.Userinfo" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
     List<LeaveWord> leaveWordList = (List<LeaveWord>)request.getAttribute("leaveWordList");
     //获取所有的userObj信息
-    List<UserInfo> userInfoList = (List<UserInfo>)request.getAttribute("userInfoList");
+    List<Userinfo> userInfoList = (List<Userinfo>)request.getAttribute("userInfoList");
     int currentPage =  (Integer)request.getAttribute("currentPage"); //当前页
     int totalPage =   (Integer)request.getAttribute("totalPage");  //一共多少页
     int recordNumber =   (Integer)request.getAttribute("recordNumber");  //一共多少记录
     String title = (String)request.getAttribute("title"); //标题查询关键字
     String addTime = (String)request.getAttribute("addTime"); //留言时间查询关键字
-    UserInfo userObj = (UserInfo)request.getAttribute("userObj");
+    Userinfo userObj = (Userinfo)request.getAttribute("userObj");
 %>
+<%!
+	String findUserNameById(Integer userId,List<Userinfo> userInfoList){
+		for (Userinfo user : userInfoList) {
+			if (user.getUserId().equals(String.valueOf(userId))){
+				return user.getName();
+			}
+		}
+		return "";
+	}%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,7 +69,7 @@
  											<td><%=leaveWord.getLeaveWordId() %></td>
  											<td><%=leaveWord.getTitle() %></td>
  											<td><%=leaveWord.getAddTime() %></td>
- 											<td><%=leaveWord.getUserObj().getName() %></td>
+ 											<td><%=findUserNameById(Integer.valueOf(leaveWord.getUserId()),userInfoList) %></td>
  											<td><%=leaveWord.getReplyTime() %></td>
  											<td>
  												<a href="<%=basePath  %>LeaveWord/<%=leaveWord.getLeaveWordId() %>/frontshow"><i class="fa fa-info"></i>&nbsp;查看</a>&nbsp;
@@ -128,12 +137,12 @@
                 <select id="userObj_user_name" name="userObj.user_name" class="form-control">
                 	<option value="">不限制</option>
 	 				<%
-	 				for(UserInfo userInfoTemp:userInfoList) {
+	 				for(Userinfo userInfoTemp:userInfoList) {
 	 					String selected = "";
- 					if(userObj!=null && userObj.getUser_name()!=null && userObj.getUser_name().equals(userInfoTemp.getUser_name()))
+ 					if(userObj!=null && userObj.getUserId()!=null && userObj.getUserId().equals(userInfoTemp.getUserId()))
  						selected = "selected";
 	 				%>
- 				 <option value="<%=userInfoTemp.getUser_name() %>" <%=selected %>><%=userInfoTemp.getName() %></option>
+ 				 <option value="<%=userInfoTemp.getUserId() %>" <%=selected %>><%=userInfoTemp.getName() %></option>
 	 				<%
 	 				}
 	 				%>

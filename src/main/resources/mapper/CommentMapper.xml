@@ -90,4 +90,9 @@
       comment_time = #{commentTime,jdbcType=VARCHAR}
     where comment_id = #{commentId,jdbcType=INTEGER}
   </update>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from t_comment
+  </select>
 </mapper>

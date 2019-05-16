@@ -41,7 +41,7 @@ public class LoginController {
     }
 
     @RequestMapping(value = "/frontlogin", method = RequestMethod.GET)
-    public String tologin() {
+    public String frontlogin() {
         return "frontlogin";
     }
 
@@ -65,5 +65,9 @@ public class LoginController {
         return ActionResponse.success(iuserService.login(username, password, session));
     }
 
+    @RequestMapping(value = "/tologin", method = RequestMethod.GET)
+    public String backlogin() {
+        return "login";
+    }
 
 }

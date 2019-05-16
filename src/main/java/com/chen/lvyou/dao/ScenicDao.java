@@ -2,6 +2,8 @@ package com.chen.lvyou.dao;
 
 import com.chen.lvyou.entity.Scenic;
 
+import java.util.List;
+
 public interface ScenicDao {
     int deleteByPrimaryKey(Integer scenicId);
 
@@ -14,4 +16,6 @@ public interface ScenicDao {
     int updateByPrimaryKeySelective(Scenic record);
 
     int updateByPrimaryKey(Scenic record);
+
+    List<Scenic> selectAll();
 }

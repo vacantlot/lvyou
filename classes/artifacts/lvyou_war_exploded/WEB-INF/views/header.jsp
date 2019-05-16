@@ -21,13 +21,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="<%=basePath %>index">首页</a></li>
                  <li><a href="<%=basePath %>user/frontlist">用户</a></li>
-                <li><a href="<%=basePath %>scenicType/frontlist">景点分类</a></li>
-                <li><a href="<%=basePath %>City/frontlist">城市</a></li>
-                <li><a href="<%=basePath %>Scenic/frontlist">景点</a></li>
-                <li><a href="<%=basePath %>Comment/frontlist">评论</a></li>
-                <li><a href="<%=basePath %>OrderInfo/frontlist">订单</a></li>
-                <li><a href="<%=basePath %>LeaveWord/frontlist">留言</a></li>
- 
+                <li><a href="<%=basePath %>scenic/type/frontlist">景点分类</a></li>
+                <li><a href="<%=basePath %>city/frontlist">城市</a></li>
+                <li><a href="<%=basePath %>scenic/frontlist">景点</a></li>
+                <li><a href="<%=basePath %>comment/frontlist">评论</a></li>
+                <li><a href="<%=basePath %>orderInfo/frontlist">订单</a></li>
+                <li><a href="<%=basePath %>leaveWord/frontlist">留言</a></li>
             </ul>
             
              <ul class="nav navbar-nav navbar-right">

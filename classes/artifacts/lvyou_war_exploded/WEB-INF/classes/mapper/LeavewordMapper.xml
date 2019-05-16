@@ -114,4 +114,9 @@
       reply_time = #{replyTime,jdbcType=VARCHAR}
     where leave_word_id = #{leaveWordId,jdbcType=INTEGER}
   </update>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_leaveword
+  </select>
 </mapper>

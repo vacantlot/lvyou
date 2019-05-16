@@ -114,4 +114,9 @@
       audit_State = #{auditState,jdbcType=VARCHAR}
     where order_id = #{orderId,jdbcType=INTEGER}
   </update>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_orderinfo
+  </select>
 </mapper>

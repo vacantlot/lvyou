@@ -27,10 +27,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </ol>
     <!-- 轮播项 -->
     <div class="carousel-inner" role="listbox">  
-      <div class="item active" data-image-lg="<%=basePath %>images/slider/slide_01_2000x410.jpg" data-image-xs="<%=basePath %>images/slider/slide_01_640x340.jpg"></div>
-      <div class="item" data-image-lg="<%=basePath %>images/slider/slide_02_2000x410.jpg" data-image-xs="<%=basePath %>images/slider/slide_02_640x340.jpg"></div>
-      <div class="item" data-image-lg="<%=basePath %>images/slider/slide_03_2000x410.jpg" data-image-xs="<%=basePath %>images/slider/slide_03_640x340.jpg"></div>
-      <div class="item" data-image-lg="<%=basePath %>images/slider/slide_04_2000x410.jpg" data-image-xs="<%=basePath %>images/slider/slide_04_640x340.jpg"></div>
+      <div class="item active" data-image-lg="<%=basePath %>images/index1.jpg" data-image-xs="<%=basePath %>images/index1.jpg"></div>
+      <div class="item" data-image-lg="<%=basePath %>images/index2.jpg" data-image-xs="<%=basePath %>images/index2.jpg"></div>
+      <div class="item" data-image-lg="<%=basePath %>images/index3.jpg" data-image-xs="<%=basePath %>images/index3.jpg"></div>
+      <div class="item" data-image-lg="<%=basePath %>images/index4.jpg" data-image-xs="<%=basePath %>images/index4.jpg"></div>
     </div> 
     <!-- 控制按钮 -->
     <a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
@@ -53,11 +53,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <a href="#">
             <div class="media">
               <div class="media-left">
-                <i class="icon-uniE907"></i>
+                <%--<i class="icon-uniE907"></i>--%>
+                  <img src="images/index1.jpg" height="80" width="80">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">精品设计制作</h4>
-                <p>此设计已经通过了精心调试</p>
+                <h4 class="media-heading">高原之旅</h4>
+                <p>到高原山间来一场浪漫的3天之旅</p>
               </div>
             </div>
           </a>
@@ -66,11 +67,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <a href="#">
             <div class="media">
               <div class="media-left">
-                <i class="icon-uniE907"></i>
+                <%--<i class="icon-uniE907"></i>--%>
+                  <img src="images/index2.jpg" height="80" width="80">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">精品设计制作</h4>
-                <p>此设计已经通过了精心调试</p>
+                <h4 class="media-heading">青城山之幽</h4>
+                <p>来这里体验青城山的幽静</p>
               </div>
             </div>
           </a>
@@ -79,11 +81,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <a href="#">
             <div class="media">
               <div class="media-left">
-                <i class="icon-uniE907"></i>
+                <%--<i class="icon-uniE907"></i>--%>
+                  <img src="images/index3.jpg" height="80" width="80">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">精品设计制作</h4>
-                <p>此设计已经通过了精心调试</p>
+                <h4 class="media-heading">稻城亚丁</h4>
+                <p>秋天的草甸，人间的天堂</p>
               </div>
             </div>
           </a>
@@ -92,11 +95,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <a href="#">
             <div class="media">
               <div class="media-left">
-                <i class="icon-uniE907"></i>
+                <%--<i class="icon-uniE907"></i>--%>
+                  <img src="images/index4.jpg" height="80" width="80">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">精品设计制作</h4>
-                <p>此设计已经通过了精心调试</p>
+                <h4 class="media-heading">巴沙岛</h4>
+                <p>领略大海的辽阔</p>
               </div>
             </div>
           </a>
@@ -105,11 +109,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <a href="#">
             <div class="media">
               <div class="media-left">
-                <i class="icon-uniE907"></i>
+                <%--<i class="icon-uniE907"></i>--%>
+                <img src="images/index5.jpg" height="80" width="80">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">精品设计制作</h4>
-                <p>此设计已经通过了精心调试</p>
+                <h4 class="media-heading">上海</h4>
+                <p>魔都的魅力</p>
               </div>
             </div>
           </a>
@@ -118,11 +123,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <a href="#">
             <div class="media">
               <div class="media-left">
-                <i class="icon-uniE907"></i>
+                <%--<i class="icon-uniE907"></i>--%>
+                <img src="images/timg1.jpg" height="80" width="80">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">精品设计制作</h4>
-                <p>此设计已经通过了精心调试</p>
+                <h4 class="media-heading">青城后山</h4>
+                <p>体会道教的设计</p>
               </div>
             </div>
           </a>

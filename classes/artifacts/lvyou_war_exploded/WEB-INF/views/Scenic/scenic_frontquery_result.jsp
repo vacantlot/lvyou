@@ -1,7 +1,7 @@
 <%@ page language="java" import="java.util.*"  contentType="text/html;charset=UTF-8"%> 
-<%@ page import="com.shuangyulin.po.Scenic" %>
-<%@ page import="com.shuangyulin.po.City" %>
-<%@ page import="com.shuangyulin.po.ScenicType" %>
+<%@ page import="com.chen.lvyou.entity.Scenic" %>
+<%@ page import="com.chen.lvyou.entity.City" %>
+<%@ page import="com.chen.lvyou.entity.ScenicType" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -13,11 +13,35 @@
     int currentPage =  (Integer)request.getAttribute("currentPage"); //当前页
     int totalPage =   (Integer)request.getAttribute("totalPage");  //一共多少页
     int recordNumber =   (Integer)request.getAttribute("recordNumber");  //一共多少记录
-    City cityObj = (City)request.getAttribute("cityObj");
-    ScenicType scenicTypeObj = (ScenicType)request.getAttribute("scenicTypeObj");
-    String dengji = (String)request.getAttribute("dengji"); //景点等级查询关键字
+    //City cityObj = (City)request.getAttribute("cityObj");
+	City cityObj = cityList.get(0);
+    //ScenicType scenicTypeObj = (ScenicType)request.getAttribute("scenicTypeObj");
+	ScenicType scenicTypeObj = scenicTypeList.get(0);
+
+	String dengji = (String)request.getAttribute("dengji"); //景点等级查询关键字
     String scenicName = (String)request.getAttribute("scenicName"); //景点名称查询关键字
 %>
+
+<%!
+	String findCityNameById(Integer cityId,List<City> cityList){
+		for (City city : cityList) {
+			if (city.getCityId().equals(String.valueOf(cityId))){
+				return city.getCityname();
+			}
+		}
+		return "";
+	}%>
+
+
+<%!
+	String findScenicTypeNameById(Integer scenicTypeId,List<ScenicType> scenicTypelist){
+		for (ScenicType scenictype : scenicTypelist) {
+			if (scenictype.getScenicTypeId().equals(scenicTypeId)){
+				return scenictype.getTypeName();
+			}
+		}
+		return "";
+	}%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +60,7 @@
 <jsp:include page="../header.jsp"></jsp:include>
 	<div class="col-md-9 wow fadeInLeft">
 		<ul class="breadcrumb">
-  			<li><a href="<%=basePath %>index.jsp">首页</a></li>
+  			<li><a href="<%=basePath %>index">首页</a></li>
   			<li><a href="<%=basePath %>Scenic/frontlist">景点信息列表</a></li>
   			<li class="active">查询结果显示</li>
   			<a class="pull-right" href="<%=basePath %>Scenic/scenic_frontAdd.jsp" style="display:none;">添加景点</a>
@@ -53,19 +77,20 @@
             		if(i%4 == 0) clearLeft = "style=\"clear:left;\"";
 			%>
 			<div class="col-md-3 bottom15" <%=clearLeft %>>
-			  <a  href="<%=basePath  %>Scenic/<%=scenic.getScenicId() %>/frontshow"><img class="img-responsive" src="<%=basePath%><%=scenic.getScenicPhoto()%>" /></a>
+			  <%--<a  href="<%=basePath  %>Scenic/<%=scenic.getScenicId() %>/frontshow"><img class="img-responsive" src="<%=basePath%><%=scenic.getScenicPhoto()%>" /></a>--%>
+				  <img src="images/index1.jpg" />
 			     <div class="showFields">
 			     	<div class="field">
 	            		景区id:<%=scenic.getScenicId() %>
 			     	</div>
 			     	<div class="field">
-	            		所在城市:<%=scenic.getCityObj().getCityName() %>
+	            		所在城市:<%=findCityNameById(Integer.valueOf(scenic.getCityId()),cityList) %>
 			     	</div>
 			     	<div class="field">
-	            		景点类型:<%=scenic.getScenicTypeObj().getTypeName() %>
+	            		景点类型:<%=findScenicTypeNameById(scenic.getScenicTypeId(),scenicTypeList) %>
 			     	</div>
 			     	<div class="field">
-	            		景点等级:<%=scenic.getDengji() %>
+	            		景点等级:<%=scenic.getScenicLevel() %>
 			     	</div>
 			     	<div class="field">
 	            		景点名称:<%=scenic.getScenicName() %>
@@ -118,10 +143,10 @@
 	 				<%
 	 				for(City cityTemp:cityList) {
 	 					String selected = "";
- 					if(cityObj!=null && cityObj.getCityNo()!=null && cityObj.getCityNo().equals(cityTemp.getCityNo()))
+ 					if(cityObj!=null && cityObj.getCityId()!=null && cityObj.getCityId().equals(cityTemp.getCityId()))
  						selected = "selected";
 	 				%>
- 				 <option value="<%=cityTemp.getCityNo() %>" <%=selected %>><%=cityTemp.getCityName() %></option>
+ 				 <option value="<%=cityTemp.getCityId() %>" <%=selected %>><%=cityTemp.getCityname() %></option>
 	 				<%
 	 				}
 	 				%>
@@ -134,10 +159,10 @@
 	 				<%
 	 				for(ScenicType scenicTypeTemp:scenicTypeList) {
 	 					String selected = "";
- 					if(scenicTypeObj!=null && scenicTypeObj.getTypeId()!=null && scenicTypeObj.getTypeId().intValue()==scenicTypeTemp.getTypeId().intValue())
+ 					if(scenicTypeObj!=null && scenicTypeObj.getScenicTypeId()!=null && scenicTypeObj.getScenicTypeId().intValue()==scenicTypeTemp.getScenicTypeId().intValue())
  						selected = "selected";
 	 				%>
- 				 <option value="<%=scenicTypeTemp.getTypeId() %>" <%=selected %>><%=scenicTypeTemp.getTypeName() %></option>
+ 				 <option value="<%=scenicTypeTemp.getScenicTypeId() %>" <%=selected %>><%=scenicTypeTemp.getTypeName() %></option>
 	 				<%
 	 				}
 	 				%>

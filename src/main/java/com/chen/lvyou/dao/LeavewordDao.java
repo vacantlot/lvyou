@@ -2,7 +2,7 @@ package com.chen.lvyou.dao;
 
 import com.chen.lvyou.entity.LeaveWord;
 
-public interface LeavewordDao {
+public interface LeavewordDao extends BaseDao<LeaveWord>{
     int deleteByPrimaryKey(Integer leaveWordId);
 
     int insert(LeaveWord record);

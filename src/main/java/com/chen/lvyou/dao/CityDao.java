@@ -20,5 +20,5 @@ public interface CityDao {
      * 查询所有的城市
      * @return
      */
-    List<City> selectAll(int pageNum, int pageSize);
+    List<City> selectAll();
 }

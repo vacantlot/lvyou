@@ -1,23 +1,44 @@
-<%@ page language="java" import="java.util.*"  contentType="text/html;charset=UTF-8"%> 
-<%@ page import="com.shuangyulin.po.OrderInfo" %>
-<%@ page import="com.shuangyulin.po.Scenic" %>
-<%@ page import="com.shuangyulin.po.UserInfo" %>
+<%@ page language="java" import="java.util.*" contentType="text/html;charset=UTF-8"%>
+<%@ page import="com.chen.lvyou.entity.Orderinfo" %>
+<%@ page import="com.chen.lvyou.entity.Scenic" %>
+<%@ page import="com.chen.lvyou.entity.Userinfo" %>
+<%--<%@ page import="java.lang.String" %>--%>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-    List<OrderInfo> orderInfoList = (List<OrderInfo>)request.getAttribute("orderInfoList");
+    List<Orderinfo> orderInfoList = (List<Orderinfo>)request.getAttribute("orderInfoList");
     //获取所有的scenicObj信息
     List<Scenic> scenicList = (List<Scenic>)request.getAttribute("scenicList");
     //获取所有的userObj信息
-    List<UserInfo> userInfoList = (List<UserInfo>)request.getAttribute("userInfoList");
+    List<Userinfo> userInfoList = (List<Userinfo>)request.getAttribute("userInfoList");
     int currentPage =  (Integer)request.getAttribute("currentPage"); //当前页
     int totalPage =   (Integer)request.getAttribute("totalPage");  //一共多少页
     int recordNumber =   (Integer)request.getAttribute("recordNumber");  //一共多少记录
     Scenic scenicObj = (Scenic)request.getAttribute("scenicObj");
     String orderDate = (String)request.getAttribute("orderDate"); //预定日期查询关键字
-    UserInfo userObj = (UserInfo)request.getAttribute("userObj");
+    Userinfo userObj = (Userinfo)request.getAttribute("userObj");
     String shState = (String)request.getAttribute("shState"); //审核状态查询关键字
 %>
+<%!
+	String findUserNameById(Integer userId,List<Userinfo> userInfoList){
+		for (Userinfo user : userInfoList) {
+			if (user.getUserId().equals(String.valueOf(userId))){
+				return user.getName();
+			}
+		}
+		return "";
+	}%>
+
+
+<%!
+	String findScenicNameById(Integer scenicId,List<Scenic> Sceniclist){
+		for (Scenic scenic : Sceniclist) {
+			if (scenic.getScenicId().equals(scenicId)){
+				return scenic.getScenicName();
+			}
+		}
+		return "";
+	}%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,17 +78,17 @@
 				    	            		/*遍历记录*/
 				    	            		for(int i=0;i<orderInfoList.size();i++) {
 					    	            		int currentIndex = startIndex + i + 1; //当前记录的序号
-					    	            		OrderInfo orderInfo = orderInfoList.get(i); //获取到订单对象
+					    	            		Orderinfo orderInfo = orderInfoList.get(i); //获取到订单对象
  										%>
  										<tr>
  											<td><%=currentIndex %></td>
- 											<td><%=orderInfo.getOrderId() %></td>
- 											<td><%=orderInfo.getScenicObj().getScenicName() %></td>
+ 											<td><%=((Orderinfo) orderInfo).getOrderId() %></td>
+ 											<td><%= findScenicNameById(orderInfo.getScenicId(),scenicList)%></td>
  											<td><%=orderInfo.getOrderDate() %></td>
- 											<td><%=orderInfo.getPrice() %></td>
- 											<td><%=orderInfo.getUserObj().getName() %></td>
+ 											<td><%=orderInfo.getPrice()+"元" %></td>
+ 											<td><%=findUserNameById(orderInfo.getScenicId(),userInfoList)%></td>
  											<td><%=orderInfo.getOrderTime() %></td>
- 											<td><%=orderInfo.getShState() %></td>
+ 											<td><%=orderInfo.getAuditState() %></td>
  											<td>
  												<a href="<%=basePath  %>OrderInfo/<%=orderInfo.getOrderId() %>/frontshow"><i class="fa fa-info"></i>&nbsp;查看</a>&nbsp;
  												<a href="#" onclick="orderInfoEdit('<%=orderInfo.getOrderId() %>');" style="display:none;"><i class="fa fa-pencil fa-fw"></i>编辑</a>&nbsp;
@@ -134,12 +155,12 @@
                 <select id="userObj_user_name" name="userObj.user_name" class="form-control">
                 	<option value="">不限制</option>
 	 				<%
-	 				for(UserInfo userInfoTemp:userInfoList) {
+	 				for(Userinfo userInfoTemp:userInfoList) {
 	 					String selected = "";
- 					if(userObj!=null && userObj.getUser_name()!=null && userObj.getUser_name().equals(userInfoTemp.getUser_name()))
+ 					if(userObj!=null && userObj.getUserId()!=null && userObj.getUserId().equals(userInfoTemp.getUserId()))
  						selected = "selected";
 	 				%>
- 				 <option value="<%=userInfoTemp.getUser_name() %>" <%=selected %>><%=userInfoTemp.getName() %></option>
+ 				 <option value="<%=userInfoTemp.getUserId() %>" <%=selected %>><%=userInfoTemp.getName() %></option>
 	 				<%
 	 				}
 	 				%>

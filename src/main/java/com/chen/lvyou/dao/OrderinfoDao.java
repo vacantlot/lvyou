@@ -2,7 +2,7 @@ package com.chen.lvyou.dao;
 
 import com.chen.lvyou.entity.Orderinfo;
 
-public interface OrderinfoDao {
+public interface OrderinfoDao extends BaseDao<Orderinfo>{
     int deleteByPrimaryKey(Integer orderId);
 
     int insert(Orderinfo record);

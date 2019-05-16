@@ -20,6 +20,6 @@ public class CityServiceImpl implements ICityService {
     private CityDao cityDao;
 
     @Override public List<City> findAll(int pageNum, int pageSize) {
-        return cityDao.selectAll(pageNum,pageSize);
+        return cityDao.selectAll();
     }
 }
